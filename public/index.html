@@ -42,7 +42,7 @@
 
     <script>
       if('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/offline.js', { scope: '/' })
+        navigator.serviceWorker.register('%PUBLIC_URL%/offline.js', { scope: '%PUBLIC_URL%/' })
           .then(function(registration) {
             console.log('Service Worker Đã được đăng ký');
           });
